@@ -1,0 +1,5 @@
+.animate__animated:hover{
+/* background-color:red; */
+animation:flipOutY;
+animation-duration: 5s; 
+}

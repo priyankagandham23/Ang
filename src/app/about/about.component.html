@@ -1,0 +1,23 @@
+<!-- <p>about works!</p>
+<ul class="nav nav-pills">
+    <li [class.active]="view =='H1'">
+        <a (click)= "view ='H1'">Home</a>
+    </li>
+    <li [class.active]="view =='H2'"> 
+        <a (click)="view ='H2'">AboutUs</a>
+    </li>
+    <li [class.active]="view =='H3'"> 
+        <a (click)="view ='H3'">ContactUs</a>
+    </li>
+</ul>
+<div [ngSwitch]="view">
+<div *ngSwitchCase="'H1'">HomePage</div>
+<div *ngSwitchCase="'H2'">AboutPage</div>
+<div *ngSwitchCase="'H3'">ContactPage</div>
+<div *ngSwitchDefault> Other</div>
+</div> -->
+<div *ngFor="let l1 of lists;index as i;even as e;odd as d;last  as c">
+ {{i}}-{{l1}}===={{c}}
+<span *ngIf="e">EVEN</span>
+<span *ngIf="d">odd</span>
+</div>

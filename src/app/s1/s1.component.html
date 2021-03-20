@@ -1,0 +1,11 @@
+<!-- Username:<input [(ngModel)]="name" type="text">
+{{name}} -->
+<form>
+    <label for="">FirstName</label>
+    <input type="text" minlength="3" maxlength="10" pattern="ban" name="first" required>
+    <div class="alert alert-danger" *ngIf="first.touched && first.valid">
+        <div *ngIf="first.errors.required">
+            Firstname is
+        </div>
+    </div>
+</form>
